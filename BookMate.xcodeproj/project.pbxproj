@@ -13,6 +13,9 @@
 		B51DA166272B5D6F00498138 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51DA164272B5D6F00498138 /* Main.storyboard */; };
 		B51DA168272B5D7000498138 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51DA167272B5D7000498138 /* Assets.xcassets */; };
 		B51DA16B272B5D7000498138 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51DA169272B5D7000498138 /* LaunchScreen.storyboard */; };
+		B51DA199272C6DCE00498138 /* bookstable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51DA198272C6DCE00498138 /* bookstable.swift */; };
+		B51DA1A1272C9DE900498138 /* bookShelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51DA19F272C9DE900498138 /* bookShelf.swift */; };
+		B51DA1A2272C9DE900498138 /* bookShelf.xib in Resources */ = {isa = PBXBuildFile; fileRef = B51DA1A0272C9DE900498138 /* bookShelf.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		B51DA167272B5D7000498138 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B51DA16A272B5D7000498138 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B51DA16C272B5D7000498138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B51DA198272C6DCE00498138 /* bookstable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bookstable.swift; sourceTree = "<group>"; };
+		B51DA19F272C9DE900498138 /* bookShelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bookShelf.swift; sourceTree = "<group>"; };
+		B51DA1A0272C9DE900498138 /* bookShelf.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = bookShelf.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		B51DA15D272B5D6F00498138 /* BookMate */ = {
 			isa = PBXGroup;
 			children = (
-				B51DA15E272B5D6F00498138 /* AppDelegate.swift */,
-				B51DA160272B5D6F00498138 /* SceneDelegate.swift */,
-				B51DA162272B5D6F00498138 /* ViewController.swift */,
-				B51DA164272B5D6F00498138 /* Main.storyboard */,
-				B51DA167272B5D7000498138 /* Assets.xcassets */,
-				B51DA169272B5D7000498138 /* LaunchScreen.storyboard */,
+				B51DA19C272C9D9B00498138 /* Cells */,
+				B51DA196272C616900498138 /* Controllers */,
+				B51DA197272C618900498138 /* Supply files */,
 				B51DA16C272B5D7000498138 /* Info.plist */,
 			);
 			path = BookMate;
+			sourceTree = "<group>";
+		};
+		B51DA196272C616900498138 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B51DA198272C6DCE00498138 /* bookstable.swift */,
+				B51DA164272B5D6F00498138 /* Main.storyboard */,
+				B51DA162272B5D6F00498138 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B51DA197272C618900498138 /* Supply files */ = {
+			isa = PBXGroup;
+			children = (
+				B51DA15E272B5D6F00498138 /* AppDelegate.swift */,
+				B51DA160272B5D6F00498138 /* SceneDelegate.swift */,
+				B51DA167272B5D7000498138 /* Assets.xcassets */,
+				B51DA169272B5D7000498138 /* LaunchScreen.storyboard */,
+			);
+			path = "Supply files";
+			sourceTree = "<group>";
+		};
+		B51DA19C272C9D9B00498138 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B51DA19F272C9DE900498138 /* bookShelf.swift */,
+				B51DA1A0272C9DE900498138 /* bookShelf.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +161,7 @@
 				B51DA16B272B5D7000498138 /* LaunchScreen.storyboard in Resources */,
 				B51DA168272B5D7000498138 /* Assets.xcassets in Resources */,
 				B51DA166272B5D6F00498138 /* Main.storyboard in Resources */,
+				B51DA1A2272C9DE900498138 /* bookShelf.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +173,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B51DA163272B5D6F00498138 /* ViewController.swift in Sources */,
+				B51DA199272C6DCE00498138 /* bookstable.swift in Sources */,
 				B51DA15F272B5D6F00498138 /* AppDelegate.swift in Sources */,
 				B51DA161272B5D6F00498138 /* SceneDelegate.swift in Sources */,
+				B51DA1A1272C9DE900498138 /* bookShelf.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
